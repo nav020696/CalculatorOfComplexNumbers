@@ -11,17 +11,17 @@ public class ComplexNumbers extends CalculateNumbers {
     @Override
     public String toString() {
         if (imaginaryPart > 0) {
-            return String.format("Result: %.2f + %.2fi", realPart, imaginaryPart);
+            return String.format("%.2f + %.2fi", realPart, imaginaryPart);
         } else if (imaginaryPart == 0){
             {
-                return String.format("Result: %.2f - i", realPart);
+                return String.format("%.2f - i", realPart);
             }
         }else if (realPart == 0){
             {
-                return String.format("Result: %.2fi", imaginaryPart);
+                return String.format("%.2fi", imaginaryPart);
             }
         }else{
-            return String.format("Result: %.2f - %.2fi", realPart, Math.abs(imaginaryPart));
+            return String.format("%.2f - %.2fi", realPart, Math.abs(imaginaryPart));
         }
     }
 }

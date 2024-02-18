@@ -1,14 +1,13 @@
 package controller;
 
+import model.Calculable;
 import model.CalculateNumbers;
-import model.impl.CalculateComplexNumbers;
-import model.impl.ComplexNumbers;
 
-public class CalculateController {
+public class CalculateComplexNumbersController {
 
-    CalculateComplexNumbers calculateComplexNumbers;
+    Calculable<CalculateNumbers> calculateComplexNumbers;
 
-    public CalculateController(CalculateComplexNumbers calculateComplexNumbers) {
+    public CalculateComplexNumbersController(Calculable calculateComplexNumbers) {
         this.calculateComplexNumbers = calculateComplexNumbers;
     }
 

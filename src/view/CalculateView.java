@@ -1,19 +1,16 @@
 package view;
 
-import controller.CalculateController;
-import model.Calculable;
+import controller.CalculateComplexNumbersController;
 import model.CalculateNumbers;
 import model.impl.ComplexNumbers;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class CalculateView {
-    private final CalculateController controller;
+    private final CalculateComplexNumbersController controller;
 //    private Map<String, Calculable> commands;
 
-    public CalculateView(CalculateController controller) {
+    public CalculateView(CalculateComplexNumbersController controller) {
         this.controller = controller;
 //        this.commands = new HashMap<>();
     }
@@ -33,16 +30,16 @@ public class CalculateView {
 
             switch (operation){
                 case "+":
-                    System.out.println(controller.sumOfElements(number1, number2));
+                    System.out.println("Result: " + controller.sumOfElements(number1, number2));
                     break;
                 case "-":
-                    System.out.println(controller.differenceOfElements(number1, number2));
+                    System.out.println("Result: " + controller.differenceOfElements(number1, number2));
                     break;
                 case "*":
-                    System.out.println(controller.multiplyOfElements(number1, number2));
+                    System.out.println("Result: " + controller.multiplyOfElements(number1, number2));
                     break;
                 case "/":
-                    System.out.println(controller.divisionOfElements(number1, number2));
+                    System.out.println("Result: " + controller.divisionOfElements(number1, number2));
                     break;
                 default:
                     System.out.println(0);
